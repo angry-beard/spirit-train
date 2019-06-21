@@ -1,0 +1,18 @@
+white wine白葡萄酒
+red wine红葡萄酒
+claret波尔多红葡萄酒
+cider苹果酒
+champagne香槟酒
+cocktail鸡尾酒
+liqueur白酒，烧酒
+shaohsing wine 绍兴酒
+yellow wine 黄酒
+kaoliang spirit 高梁酒
+wu chia pee 五加皮
+vodka 伏特加
+whisky 威士忌
+brandy 白兰地
+cognac 法国白兰地
+gin 琴酒
+gin flzz杜松子酒
+martini马提尼酒
