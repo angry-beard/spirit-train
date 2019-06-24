@@ -47,7 +47,7 @@ public class BinarySearch {
     }
 
     public static List<Integer> getRandomNums(int bound) {
-        List<Integer> randomNums = new ArrayList<Integer>();
+        List<Integer> randomNums = new ArrayList<>();
         for (int i = 0; i < bound; i++) {
             randomNums.add(new Random().nextInt(bound));
         }

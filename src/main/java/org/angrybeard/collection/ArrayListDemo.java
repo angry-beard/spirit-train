@@ -1,4 +1,4 @@
-package org.angrybeard.Collection;
+package org.angrybeard.collection;
 
 import java.util.ArrayList;
 import java.util.List;
