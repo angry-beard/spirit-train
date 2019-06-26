@@ -1,14 +1,18 @@
 package org.angrybeard.designmode.factory;
 
+import org.angrybeard.designmode.factory.pizza.*;
+
 /**
  * Created by angry_beary on 2019/6/24.
  */
 public class NYPizzaStore extends PizzaStore {
 
-    PizzaStore createPizza(PizzaItem item) {
-        if (PizzaItem.CHEESE.equals(item)) {
-            return null;
-        }
-        return null;
+    private PizzaIngredientFactory ingredientFactory = new NYPizzaIngredientFactory();
+
+    @Override
+    protected Pizza createPizza(PizzaItem item) {
+        Pizza pizza = createPizza(item, ingredientFactory);
+        pizza.setName("Ny " + item.toString().toLowerCase());
+        return pizza;
     }
 }
