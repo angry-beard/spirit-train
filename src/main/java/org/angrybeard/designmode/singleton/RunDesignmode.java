@@ -1,6 +1,7 @@
-package org.angrybeard.designmode;
+package org.angrybeard.designmode.singleton;
 
 import com.sun.tools.javac.util.Abort;
+import org.angrybeard.designmode.singleton.Singleton;
 
 import java.util.concurrent.*;
 

@@ -1,0 +1,5 @@
+BIO
+（1）Blocking IO 阻塞IO 同步阻塞IO
+同步：
+阻塞：
+（2）线程
