@@ -1,13 +1,20 @@
-package java.org.angrybeard.designmode.command;
+package org.angrybeard.designmode.command;
 
+/**
+ * Created by angry_beary on 2019/9/15.
+ */
 public class SimpleRemoteControl {
 
-    Command command;
+    Command slot;
 
-    public SimpleRemoteControl(Command command){
-        this.command = command;
+    public SimpleRemoteControl() {
     }
 
+    public void setCommand(Command command) {
+        this.slot = command;
+    }
 
+    public void buttonWasPressed() {
+        slot.execute();
+    }
 }
-

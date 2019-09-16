@@ -40,9 +40,9 @@ public class FutureDemo {
         }
 
         FutureTask<Integer> findMaxInFirstPart =
-                new FutureTask<Integer>(new FindMax(a, 0, 999));
+                new FutureTask<>(new FindMax(a, 0, 999));
         FutureTask<Integer> findMaxInSecondPart =
-                new FutureTask<Integer>(new FindMax(a, 1000, 1999));
+                new FutureTask<>(new FindMax(a, 1000, 1999));
 
         new Thread(findMaxInFirstPart).start();
         new Thread(findMaxInSecondPart).start();

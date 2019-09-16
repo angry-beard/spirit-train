@@ -1,4 +1,4 @@
-package org.angrybeard.designmode;
+package org.angrybeard.designmode.singleton;
 
 /**
  * Created by angry_beary on 2019/6/23.
