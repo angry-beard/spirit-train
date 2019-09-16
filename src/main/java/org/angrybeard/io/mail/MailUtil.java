@@ -1,4 +1,4 @@
-package org.angrybeard.mail;
+package org.angrybeard.io.mail;
 
 import java.util.Date;
 import java.util.Properties;
