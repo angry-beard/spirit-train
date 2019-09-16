@@ -1,4 +1,4 @@
-package java.org.angrybeard.designmode.command.tasks;
+package org.angrybeard.designmode.command.tasks;
 
 public class Light {
 

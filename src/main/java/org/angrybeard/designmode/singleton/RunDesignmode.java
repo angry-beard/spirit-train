@@ -1,6 +1,6 @@
 package org.angrybeard.designmode.singleton;
 
-import com.sun.tools.javac.util.Abort;
+//import com.sun.tools.javac.util.Abort;
 import org.angrybeard.designmode.singleton.Singleton;
 
 import java.util.concurrent.*;
@@ -11,7 +11,7 @@ import java.util.concurrent.*;
 public class RunDesignmode {
 
     public static void main(String[] args) {
-        ThreadPoolExecutor executor = new ThreadPoolExecutor(10, 20, 10, TimeUnit.SECONDS,
+        /*ThreadPoolExecutor executor = new ThreadPoolExecutor(10, 20, 10, TimeUnit.SECONDS,
                 new ArrayBlockingQueue(100), new ThreadFactory() {
             @Override
             public Thread newThread(Runnable r) {
@@ -20,7 +20,7 @@ public class RunDesignmode {
         }, (RejectedExecutionHandler) new Abort());
         for (int i = 0; i < 100; i++) {
             // executor.execute();
-        }
+        }*/
         Singleton.getSingleton().sayHello();
     }
 }
