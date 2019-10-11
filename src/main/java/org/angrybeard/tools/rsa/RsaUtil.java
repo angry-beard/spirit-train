@@ -81,8 +81,9 @@ public class RsaUtil {
                 publicKey.append(s + "\r");
             }
         }
-        System.out.println(publicKey.toString());//配置成privateKey
-        byte[] keyBytes = Base64.decodeBase64(publicKey.toString().getBytes());
+        String b = publicKey.toString();
+        System.out.println(b);//配置成privateKey
+        byte[] keyBytes = Base64.decodeBase64(b.getBytes());
 
         return getPrivateKey(keyBytes);
     }
