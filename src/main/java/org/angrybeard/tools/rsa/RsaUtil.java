@@ -1,8 +1,8 @@
 package org.angrybeard.tools.rsa;
 
 
-import org.apache.commons.codec.binary.Base64;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
+//import org.apache.commons.codec.binary.Base64;
+//import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import javax.crypto.Cipher;
 import java.io.BufferedReader;
@@ -22,7 +22,7 @@ public class RsaUtil {
 
     public static final String PADDING = "RSA/ECB/PKCS1Padding";
     public static final String PROVIDER = "BC";
-    public static final Provider provider = new BouncyCastleProvider();
+    public static final Provider provider = null;//new BouncyCastleProvider();
 
     static {
         Security.addProvider(provider);
@@ -53,7 +53,7 @@ public class RsaUtil {
 
         try {
             for (int i = 0; i < blocks.length; i++) {
-                byte[] data = Base64.decodeBase64(blocks[i].getBytes());
+                byte[] data = null;//Base64.decodeBase64(blocks[i].getBytes());
                 byte[] finalBytes = cipher.doFinal(data);
                 result.append(new String(finalBytes, "UTF-8"));
             }
@@ -83,7 +83,7 @@ public class RsaUtil {
         }
         String b = publicKey.toString();
         System.out.println(b);//配置成privateKey
-        byte[] keyBytes = Base64.decodeBase64(b.getBytes());
+        byte[] keyBytes = null;//Base64.decodeBase64(b.getBytes());
 
         return getPrivateKey(keyBytes);
     }

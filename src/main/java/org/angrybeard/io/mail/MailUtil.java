@@ -5,14 +5,14 @@ import java.util.Properties;
 
 import javax.activation.DataHandler;
 import javax.activation.FileDataSource;
-import javax.mail.Message.RecipientType;
+/*import javax.mail.Message.RecipientType;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
-import javax.mail.internet.MimeUtility;
+import javax.mail.internet.MimeUtility;*/
 
 public class MailUtil {
 
@@ -28,7 +28,7 @@ public class MailUtil {
     public static String receiveMailAccount = "772891344@qq.com";
 
     public static void main(String[] args) throws Exception {
-        // 1. 创建参数配置, 用于连接邮件服务器的参数配置
+       /* // 1. 创建参数配置, 用于连接邮件服务器的参数配置
         Properties props = new Properties();                    // 参数配置
         props.setProperty("mail.transport.protocol", "smtp");   // 使用的协议（JavaMail规范要求）
         props.setProperty("mail.smtp.host", myEmailSMTPHost);   // 发件人的邮箱的 SMTP 服务器地址
@@ -57,13 +57,13 @@ public class MailUtil {
         transport.sendMessage(message, message.getAllRecipients());
 
         // 7. 关闭连接
-        transport.close();
+        transport.close();*/
     }
 
     /**
      * 创建一封复杂邮件（文本+图片+附件）
      */
-    public static MimeMessage createMimeMessage(Session session, String sendMail, String receiveMail) throws Exception {
+   /* public static MimeMessage createMimeMessage(Session session, String sendMail, String receiveMail) throws Exception {
         // 1. 创建邮件对象
         MimeMessage message = new MimeMessage(session);
 
@@ -76,9 +76,9 @@ public class MailUtil {
         // 4. Subject: 邮件主题
         message.setSubject("TEST邮件主题（文本+图片+附件）", "UTF-8");
 
-        /*
+        *//*
          * 下面是邮件内容的创建:
-         */
+         *//*
 
         // 5. 创建图片“节点”
         MimeBodyPart image = new MimeBodyPart();
@@ -125,6 +125,6 @@ public class MailUtil {
         message.saveChanges();
 
         return message;
-    }
+    }*/
 
 }
